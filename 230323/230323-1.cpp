@@ -2,26 +2,25 @@
 
 int main()
 {
-    int a = 1;
-    int b = 2;
-    std::cout << a+b << "\n";
+    /*
+    std::string name;
+    int age;
 
-    float f = 1.2;
-    float g = 3.9;
-    std::cout << f+g << "\n";
+    std::cout << "이름을 입력하세요.";
+    std::cin >> name;
+    std::cout << "나이를 입력하세요.";
+    std::cin >> age;
+    std::cout << "안녕하세요! " + name + "님(" << age << "세)";
+    */
 
-    bool c1 = true;
-    std::cout << c1 << "\n";
-
-    bool c2 = false;
-    std::cout << c2 << "\n";
-
-    char d = 'a';
-    std::cout << d << "\n";
-
-    char e = 'b';
-    std::cout << e << "\n";
-
-    std::string str1 = "안녕?";
-    std::cout << str1 << "\n";
+   int a = 5;
+    if (a>10){
+        std::cout << "a가 10보다 큽니다.";
+    }
+    else if (a == 5) {
+        std::cout << "a는 5입니다.";
+    }
+    else {
+        std::cout << "a는 10보다 크지 않고 5가 아닙니다.";
+    }
 }
