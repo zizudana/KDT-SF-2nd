@@ -4,7 +4,7 @@
 #include <ctime>
 using namespace std;
 
-int total = 1;
+int total = 1; //현재까지 부른 수
 
 int baskin_game(int num, int who) //who : 사용자 1 컴퓨터 0
 {
@@ -24,8 +24,6 @@ int baskin_game(int num, int who) //who : 사용자 1 컴퓨터 0
 int main()
 {
     int num; //부를 개수
-    int total = 1; //현재까지 부른 수
-    int i;
     srand(time(NULL));
 
     while(1)
