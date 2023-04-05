@@ -13,10 +13,8 @@ int baskin_game(int num, int who) //who : 사용자 1 컴퓨터 0
         cout << total++ << endl;
         if(total > 31)
         {
-            if (who == 1)
-                cout << "게임 종료! 컴퓨터의 승리입니다." << endl;
-            else
-                cout << "게임 종료! 사용자의 승리입니다." << endl;
+            (who == 1) ? cout << "게임 종료! 컴퓨터의 승리입니다." : cout << "게임 종료! 사용자의 승리입니다.";
+            cout << endl;
             return 1;
         }
     }
