@@ -8,17 +8,17 @@ int main()
 {
     int user[3]; //사용자가 입력한 숫자
     int baseball[3]; //컴퓨터가 생성한 정답 숫자
-    int num, i, j;
-    bool is_in;
+    //int num, i, j;
+    //bool is_in;
     int cnt = 0;
 
     //야구게임 번호 생성
     srand(time(NULL));
     while (cnt < 3)
     {
-        num = rand()%9 + 1;
-        is_in = false;
-        for (i=0;i<cnt;i++)
+        int num = rand()%9 + 1;
+        bool is_in = false;
+        for (int i=0;i<cnt;i++)
         {
             if(baseball[i] == num)
                 is_in = true;
@@ -44,8 +44,8 @@ int main()
             cout << "게임을 종료하였습니다." << endl;
             return 0;
         }
-        for (i=0;i<3;i++){
-            for (j=0;j<3;j++){
+        for (int i=0;i<3;i++){
+            for (int j=0;j<3;j++){
                 if (baseball[i] == user[j])
                     (i==j) ? strike++ : ball++;
             }
