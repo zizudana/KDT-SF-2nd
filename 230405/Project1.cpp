@@ -30,7 +30,7 @@ int main()
     {
         cout << "\n개수를 입력하세요: ";
         cin >> num;
-        if (num < 1 | num >3)
+        if (num < 1 || num >3)
         {
             cout << "1~3 사이의 수를 입력하세요" << endl;
             continue;
