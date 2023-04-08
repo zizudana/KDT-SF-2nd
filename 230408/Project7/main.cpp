@@ -17,8 +17,6 @@ int main(){
     Character computer("컴퓨터");
 
     int n, w;
-    string user_input;
-    vector<Character*> characters;
     int who=1; //1: user 0: computer
     while(1)
     {

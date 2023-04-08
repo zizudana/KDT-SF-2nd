@@ -8,6 +8,7 @@ class Gun : public Weapon
 public:
     Gun();
     void attack();
+    ~Gun();
 };
 
 #endif

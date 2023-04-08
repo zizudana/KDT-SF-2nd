@@ -11,3 +11,4 @@ void Gun::attack()
     this->num -= 1;
     cout << "총쏘기!!" << endl;
 }
+Gun::~Gun() {}

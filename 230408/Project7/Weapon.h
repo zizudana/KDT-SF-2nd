@@ -9,6 +9,7 @@ public:
     int power; //공격력
     int num; //공격가능횟수
     virtual void attack() = 0;
+    virtual ~Weapon();
 };
 
 #endif

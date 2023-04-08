@@ -11,3 +11,4 @@ void Sword::attack()
     this->num -= 1;
     cout << "찌르기!!" << endl;
 }
+Sword::~Sword(){}
