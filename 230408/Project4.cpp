@@ -13,15 +13,17 @@ int main()
     int **magic_square = new int*[n];
     for (i=0;i<n;i++)
     {
-        magic_square[i] = new int[n];
+        //magic_square[i] = new int[n];
+        //0으로 초기화
+        magic_square[i] = new int[n] {};
     }
-    for (i=0;i<n;i++)
+    /*for (i=0;i<n;i++)
     {
         for (j=0;j<n;j++)
         {
             magic_square[i][j] = 0;
         }
-    }
+    }*/
 
     //1) 1은 첫 행의 가운데에 위치한다.
     int x = 0;
